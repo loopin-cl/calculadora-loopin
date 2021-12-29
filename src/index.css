@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.form-container .MuiFormControl-root, .form-container .MuiButton-root {
+  margin: 20px 0;
+}
+
+.MuiChip-root {
+  margin-left: -5px;
+}
+
+.total-points-container {
+  margin: 50px 16px;
+}
+
+.total-points-container label {
+  margin: 0;
+}
+
+.total-points-container h2 {
+  margin-bottom: 0;
+}
+
+.total-points-number {
+  text-align: right;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.total-points-number span {
+  font-size: 20px;
+  margin-right: 10px;
+  text-decoration: line-through;
+}
+
+.bonus-message {
+  text-align: right;
+  font-size: 20px;
+  margin-top: -20px;
+  color: #FE7E1F;
+  font-weight: bold;
+}
+
+.MuiChip-root {
+  color: #FFF !important;
+  font-weight: bold;
+  display: block;
+}
+
+.chip-cervezas {
+  background-color: rgba(200, 0, 0, .8) !important;
+}
+
+.chip-licores {
+  background-color: rgba(100, 200, 0, .7) !important;
+}
+
+.chip-vinos {
+  background-color: rgba(100, 0, 200, .8) !important;
+}
+
+.chip-jugos {
+  background-color: rgba(200, 100, 0, .8) !important;
+}
+
+.chip-aguas {
+  background-color: rgba(0, 200, 200, .8) !important;
+}
+
+.chip-otros {
+  background-color: rgba(50, 50, 50, .8) !important;
+}
+
+.package-type {
+  margin: 0;
+}
