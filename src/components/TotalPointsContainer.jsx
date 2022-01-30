@@ -5,7 +5,7 @@ import Switch from '@mui/material/Switch';
 
 import { numberWithDelimiter } from '../components/helpers/numberFormat';
 
-const TotalPointsContainer = ({ totalPoints }) => {
+const TotalPointsContainer = ({ packagesQuantity, totalPoints }) => {
   const [firstWithdrawal, setFirstWithdrawal] = useState(false);
 
   const [bonusMessage, setBonusMessage] = useState();
@@ -36,7 +36,7 @@ const TotalPointsContainer = ({ totalPoints }) => {
             checked={firstWithdrawal}
             onChange={(e) => setFirstWithdrawal(e.target.checked)}
             control={<Switch color="primary" />}
-            label="¿Primer retiro?"
+            label="¿Es tu primer retiro?"
             labelPlacement="start"
           />
 

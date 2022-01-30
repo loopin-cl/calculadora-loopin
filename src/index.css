@@ -1,15 +1,24 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body, button, input, select, textarea, .MuiFormControl, .MuiInputLabel-root, .MuiOutlinedInput-root {
+  font-family: "Heebo", sans-serif !important;
+}
+
+.sub-title {
+  color: #6B7A90;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1, h2, h3 {
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .form-container .MuiFormControl-root, .form-container .MuiButton-root {
@@ -21,7 +30,7 @@ code {
 }
 
 .total-points-container {
-  margin: 50px 16px;
+  margin: 30px 16px;
 }
 
 .total-points-container label {
@@ -86,4 +95,11 @@ code {
 
 .package-type {
   margin: 0;
+}
+
+.packages-total-quantity td {
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: none;
+  padding-top: 30px;
 }

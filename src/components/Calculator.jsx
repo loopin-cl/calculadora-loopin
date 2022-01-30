@@ -75,14 +75,19 @@ const Calculator = () => {
   return (
     <Container component="main" className="calculator-container">
       <Box>
-        <h1>Calculadora Loopin</h1>
+        <h1>Calculadora de puntos</h1>
+
+        <p className="sub-title">
+          Ingresa los envases que tienes listos para entregarlos a Loopin y averigua cuántos puntos acumularías
+        </p>
 
         <CalculatorForm 
           addPackage={ addPackage } 
           packageList={ packageList }
           availableCategories={ availableCategories }
         />
-
+      </Box>
+      <Box>
         <DetailedTable
           addedPackages={addedPackages}
           removeSelected={removeSelected}
