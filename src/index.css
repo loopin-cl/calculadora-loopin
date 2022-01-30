@@ -27,13 +27,40 @@ h6 {
   margin-top: 60px;
 }
 
+.MuiContainer-root {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.site-header::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: 0px;
+    width: 1440px;
+    height: 324px;
+    background-image: url(../public/header-illustration-light.svg);
+}
+
+.site-header {
+  margin-bottom: 70px;
+}
+
+.main-app {
+  padding-right: 16px;
+  padding-left: 16px;
+  min-height: 90vh;
+}
+
 .MuiButton-contained {
   background-color: #535FD7 !important;
 }
+.Mui-disabled {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+}
 
 .header-logo-image {
-  width: 35%;
-  padding-left: 15px;
+  width: 100px;
 }
 
 .form-container .MuiFormControl-root, .form-container .MuiButton-root {
@@ -122,4 +149,45 @@ h6 {
 .schedule-message {
   font-size: 18px;
   margin-top: 40px;
+}
+
+footer {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  background: #182538;
+  color: #6B7A90;
+  padding: 30px 20px;
+}
+
+.site-footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-footer-inner img {
+  width: 100px;
+}
+
+.list-reset{
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.list-reset li {
+  margin-bottom: 10px;
+}
+
+.list-reset a {
+  color: #6B7A90;
+  text-decoration: none;
+}
+
+.social-networks img {
+  display: inline;
+  width: 30px;
+  margin-top: -5px;
+  margin-bottom: 10px;
 }

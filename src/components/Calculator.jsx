@@ -74,7 +74,15 @@ const Calculator = () => {
 
   return (
     <Container component="main" className="calculator-container">
-      <Box>
+      <Box className="main-app">
+        <div className="site-header brand header-brand">
+          <h1 className="m-0">
+            <a href="/">
+              <img className="header-logo-image" src="loopin-logo-small.png" alt="Logo"/>
+            </a>
+          </h1>
+        </div>
+        
         <h1>Calculadora de puntos</h1>
 
         <p className="sub-title">
@@ -86,8 +94,6 @@ const Calculator = () => {
           packageList={ packageList }
           availableCategories={ availableCategories }
         />
-      </Box>
-      <Box>
         <DetailedTable
           addedPackages={addedPackages}
           removeSelected={removeSelected}
@@ -99,6 +105,57 @@ const Calculator = () => {
         />
         
       </Box>
+
+      <footer className="site-footer has-top-divider">
+        <div className="container">
+          <div className="site-footer-inner">
+            <div className="brand footer-brand">
+              <a href="/">
+                <img className="asset-light" src="loopin-logo-small.png" alt="Logo"/>
+              </a>
+            </div>
+            <ul className="footer-links list-reset">
+              <li>
+                <a href="https://www.loopin.cl/puntos">
+                  Puntos por envase
+                </a>
+              </li>
+              <li>
+                <a href="https://www.loopin.cl/canjes">
+                  Canje de puntos
+                </a>
+              </li>
+              <li>
+                <a href="https://www.loopin.cl/tienda">
+                  Tienda
+                </a>
+              </li>
+              <li>
+                <a href="https://www.loopin.cl/noticias">
+                  Noticias
+                </a>
+              </li>
+              <li>
+                <a href="https://calculadora.loopin.cl">
+                  Calculdora
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="flex-container">
+          <div className="social-networks">
+            ¡Síguenos en nuestras redes sociales!
+            <p>
+              <a href="https://www.instagram.com/loopin.cl/" target="_blank">
+                <img src="instagram-icon.svg"/>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className="footer-copyright">&copy; 2021 Loopin, todos los derechos reservados</div>
+      </footer>
     </Container>
   );
 }
