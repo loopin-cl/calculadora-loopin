@@ -94,6 +94,7 @@ const Calculator = () => {
         />
 
         <TotalPointsContainer
+          packagesQuantity={addedPackages.reduce((accum, currentPackage) => accum + currentPackage.quantity, 0)}
           totalPoints={addedPackages.reduce((accum, currentPackage) => accum + currentPackage.total_points, 0)}
         />
         

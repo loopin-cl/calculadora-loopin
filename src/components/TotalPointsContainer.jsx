@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+import Button from '@mui/material/Button';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 
@@ -10,6 +11,8 @@ const TotalPointsContainer = ({ packagesQuantity, totalPoints }) => {
 
   const [bonusMessage, setBonusMessage] = useState();
   const [bonusPoints, setBonusPoints] = useState();
+
+  const disabledScheduled = packagesQuantity < 20;
 
   useEffect(() => {
     const setBonusAlert = (maximumBonus = 1000, bonusThreshold = 1000) => {
@@ -58,6 +61,35 @@ const TotalPointsContainer = ({ packagesQuantity, totalPoints }) => {
               { numberWithDelimiter(totalPoints) }
             </p>
           }
+
+          <p className="schedule-message">
+            {
+              disabledScheduled ?
+              "Debes tener al menos 20 envases para agendar un retiro 😔"
+              :
+              `¿Quieres que vayamos a buscar tus ${packagesQuantity} envases 😁?`
+            }
+          </p>
+
+          <Button 
+            variant="contained"
+            onClick={() => { window.location.href = `https://wa.me/56956837979?text=¡Hola Loopin! Tengo%20${packagesQuantity}%20envases%20para%20retirar 🍻`}}
+            fullWidth
+            disabled={disabledScheduled}
+            size="large"
+          >
+            Agendar el retiro
+          </Button>
+
+          <h6>¿Aún no eres parte de Loopin?</h6>
+          <Button 
+            variant="contained"
+            onClick={() => { window.location.href = `https://www.loopin.cl/signup.html#calculadora`}}
+            fullWidth
+            size="large"
+          >
+            Inscríbete aquí
+          </Button>
         </section>
       }
     </React.Fragment>

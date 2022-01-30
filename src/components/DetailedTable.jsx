@@ -58,11 +58,11 @@ const DetailedTable = ({ addedPackages, removeSelected }) => {
                 ))
               }
               <TableRow className="packages-total-quantity">
-                <TableCell colSpan="2">
+                <TableCell colSpan="3">
                   Total de envases salvados
                 </TableCell>
 
-                <TableCell colSpan="2" align="right">
+                <TableCell colSpan="1" align="right">
                   { numberWithDelimiter(packagesQuantity) }
                 </TableCell>
               </TableRow>
