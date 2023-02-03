@@ -38,7 +38,7 @@ const DetailedTable = ({ addedPackages, removeSelected }) => {
                       <Chip 
                         label={currentPackage.package.category}
                         size="small"
-                        className={`chip-${currentPackage.package.category.toLowerCase()}`}
+                        className={`chip-${currentPackage.package.category.toLowerCase().replaceAll(' ', '-').replaceAll('&', 'y')}`}
                       />
                       <p className="package-type">
                         { currentPackage.package.type }

@@ -131,8 +131,12 @@ h6 {
   background-color: rgba(0, 200, 200, .8) !important;
 }
 
-.chip-otros {
-  background-color: rgba(50, 50, 50, .8) !important;
+.chip-mixers-y-otros {
+  background-color: rgba(184, 172, 26, .95) !important;
+}
+
+.chip-frascos {
+  background-color: rgba(34, 65, 224, .88) !important;
 }
 
 .package-type {

@@ -12,7 +12,7 @@ const TotalPointsContainer = ({ packagesQuantity, totalPoints }) => {
   const [bonusMessage, setBonusMessage] = useState();
   const [bonusPoints, setBonusPoints] = useState();
 
-  const disabledScheduled = packagesQuantity < 20;
+  const disabledScheduled = packagesQuantity < 30;
 
   useEffect(() => {
     const setBonusAlert = (maximumBonus = 1000, bonusThreshold = 1000) => {
@@ -65,7 +65,7 @@ const TotalPointsContainer = ({ packagesQuantity, totalPoints }) => {
           <p className="schedule-message">
             {
               disabledScheduled ?
-              "Debes tener al menos 20 envases para agendar un retiro 😔"
+              "Debes tener al menos 30 envases para agendar un retiro 😔"
               :
               `¿Quieres que vayamos a buscar tus ${packagesQuantity} envases 😁?`
             }

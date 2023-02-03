@@ -21,28 +21,26 @@ const Calculator = () => {
         {id: 2, category: 'Cervezas', type: 'Botella 500cc', points: 30},
         {id: 3, category: 'Cervezas', type: 'Botella 710cc', points: 40},
         {id: 4, category: 'Licores', type: 'Botella Vidrio 275cc', points: 20},
-        {id: 5, category: 'Licores', type: 'Botella Pisco 700cc o 750cc', points: 50},
-        {id: 6, category: 'Licores', type: 'Botella Aperitivo 700cc o 750cc', points: 60},
-        {id: 7, category: 'Licores', type: 'Botella Ron 700cc o 750cc', points: 60},
-        {id: 8, category: 'Licores', type: 'Botella Vodka 750cc', points: 70},
-        {id: 9, category: 'Licores', type: 'Botella Baileys 750cc', points: 70},
-        {id: 10, category: 'Licores', type: 'Botella Tequila 750cc', points: 70},
-        {id: 11, category: 'Licores', type: 'Botella Gin 700cc o 750cc', points: 100},
-        {id: 12, category: 'Licores', type: 'Botella Whisky 700cc o 750cc', points: 100},
-        {id: 25, category: 'Vinos', type: 'Botella 375cc', points: 30},
-        {id: 26, category: 'Vinos', type: 'Botella 500cc', points: 40},
-        {id: 13, category: 'Vinos', type: 'Botella 750cc', points: 50},
-        {id: 14, category: 'Vinos', type: 'Espumante 750cc', points: 50},
-        {id: 15, category: 'Vinos', type: 'Botellón 1,5 Litros', points: 70},
-        {id: 16, category: 'Jugos', type: 'Botella vidrio 200cc o 250cc', points: 20},
-        {id: 17, category: 'Jugos', type: 'Botella vidrio 300cc o 350cc', points: 30},
-        {id: 18, category: 'Jugos', type: 'Botella vidrio 475cc o 500cc', points: 40},
-        {id: 19, category: 'Jugos', type: 'Botella vidrio 1 Litro', points: 60},
-        {id: 20, category: 'Aguas', type: 'Botella vidrio 200cc o 250cc', points: 20},
-        {id: 21, category: 'Aguas', type: 'Botella vidrio 300cc o 350cc', points: 30},
-        {id: 22, category: 'Aguas', type: 'Botella vidrio 475cc o 500cc', points: 40},
-        {id: 23, category: 'Otros', type: 'Sidra 275cc o 330cc', points: 20},
-        {id: 24, category: 'Otros', type: 'Tónica 200cc', points: 20},
+        {id: 5, category: 'Licores', type: 'Botella Vidrio 700cc o 750cc', points: 50},
+        {id: 6, category: 'Licores', type: 'Botella Vidrio 1 Litro', points: 60},
+        {id: 7, category: 'Vinos', type: 'Botella 375cc', points: 30},
+        {id: 8, category: 'Vinos', type: 'Botella 500cc', points: 40},
+        {id: 9, category: 'Vinos', type: 'Botella 750cc', points: 50},
+        {id: 10, category: 'Vinos', type: 'Espumante 750cc', points: 50},
+        {id: 11, category: 'Vinos', type: 'Botellón 1,5 Litros', points: 70},
+        {id: 12, category: 'Jugos', type: 'Botella vidrio 200cc o 250cc', points: 20},
+        {id: 13, category: 'Jugos', type: 'Botella vidrio 300cc o 350cc', points: 30},
+        {id: 14, category: 'Jugos', type: 'Botella vidrio 475cc o 500cc', points: 40},
+        {id: 15, category: 'Jugos', type: 'Botella vidrio 1 Litro', points: 60},
+        {id: 16, category: 'Aguas', type: 'Botella vidrio 200cc o 250cc', points: 20},
+        {id: 17, category: 'Aguas', type: 'Botella vidrio 300cc o 350cc', points: 30},
+        {id: 18, category: 'Aguas', type: 'Botella vidrio 475cc o 500cc', points: 40},
+        {id: 19, category: 'Mixers & otros', type: 'Sidra 275cc o 330cc', points: 20},
+        {id: 20, category: 'Mixers & otros', type: 'Tónica 200cc', points: 20},
+        {id: 21, category: 'Frascos', type: 'Frasco entre 10cc y 100cc', points: 20},
+        {id: 22, category: 'Frascos', type: 'Frasco entre 101cc y 200cc', points: 30},
+        {id: 23, category: 'Frascos', type: 'Frasco 201cc y 500cc', points: 40},
+        {id: 24, category: 'Frascos', type: 'Frasco 501cc y 1.000cc', points: 50},
       ]);
     }
 
@@ -53,7 +51,8 @@ const Calculator = () => {
         'Vinos',
         'Jugos',
         'Aguas',
-        'Otros'
+        'Mixers & otros',
+        'Frascos'
       ]);
     }
 
@@ -121,13 +120,8 @@ const Calculator = () => {
                 </a>
               </li>
               <li>
-                <a href="https://www.loopin.cl/canjes">
-                  Canje de puntos
-                </a>
-              </li>
-              <li>
                 <a href="https://www.loopin.cl/tienda">
-                  Tienda
+                  Canjea tus puntos
                 </a>
               </li>
               <li>
@@ -154,7 +148,7 @@ const Calculator = () => {
             </p>
           </div>
         </div>
-        <div className="footer-copyright">&copy; 2021 Loopin, todos los derechos reservados</div>
+        <div className="footer-copyright">&copy; 2023 Loopin, todos los derechos reservados</div>
       </footer>
     </Container>
   );
